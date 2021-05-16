@@ -1,0 +1,138 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ]
+    },
+    {
+      "tag": "LS&CG",
+      "patterns": [
+        "want to know about the company",
+        "info about the company",
+        "Tell me about the company",
+        "what is lscg",
+        "what does lscg do",
+        "what does your company do ?"
+      ]
+    },
+    {
+      "tag": "internet banking",
+      "patterns": [
+        "internet banking",
+        "online transaction",
+        "net banking",
+        "limit of online transaction",
+        "KYC"
+      ]
+    },
+    {
+      "tag": "insurance",
+      "patterns": [
+        "claim",
+        "cover",
+        "guarantee",
+        "premium",
+        "life insurance",
+        "term insurance",
+        "health insurance",
+        "mature"
+      ]
+    },
+    {
+      "tag": "payment_issue",
+      "patterns": [
+        "Payment Issue ",
+        "Having a Payment Problem",
+        "Issue in making Payment",
+        "Payment not made",
+        "Unsuccessful Payment",
+        "Transaction",
+        "Transaction Failed",
+        "Transaction unsuccessful",
+        "Payment Halted",
+        "Banking payment problem"
+      ]
+    },
+    {
+      "tag": "contact_human_agent",
+      "patterns": [
+        "Contact Human Agent",
+        "Human Agent",
+        "No respond",
+        "contact customer care",
+        "Customer Care",
+        "Provide Contact details",
+        "Help needed"
+      ]
+    },
+    {
+      "tag": "invoices",
+      "patterns": [
+        "Check Invoice",
+        "Payment Details",
+        "Generate Billing",
+        "Provide Me Billing",
+        "Please Look Into Invoice",
+        "Current Invoice",
+        "Review The Invoice"
+      ]
+    },
+    {
+      "tag": "card_details",
+      "patterns": [
+        "credit card",
+        "debit card",
+        "card not working",
+        "card lost",
+        "card damaged",
+        "card misplaced",
+        "new card",
+        "issue a card",
+        "block my card"
+      ]
+    },
+    {
+      "tag": "loan",
+      "patterns": [
+        "loan prerequisites",
+        "downpayment",
+        "interest rate",
+        "debt",
+        "repayment",
+        "mortgage",
+        "loan",
+        "borrow",
+        "lend me money",
+        "processing fee"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medizin</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='resources/medi.ico') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='css/style.css') }}"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap">
+</head>
+<body>
+  <div class="logo-container">
+    <img class="logo" src="/static/resources/medi.png"/>
+    <h4><b>Medizin</b></h4>
+  </div>
+  <div class="intro">
+    <div class="title-container">
+      <h3>Welcome to Medizin Chatbot</h3>
+      <br>
+      <h3><strong>Created By Crazy Coders</strong></h3>
+    </div>
+  </div>
+  <div class="background-card">
+    <img class="intro-pic" src="/static/resources/intro.gif"/>
+  </div>
+
+  <div id="chat-circle" class="chat-circle" style="background-color: crimson">
+    <img src="{{ url_for('static', filename='resources/medi.png') }}"/>
+  </div>
+
+  <div class="card main-card user" id="main-card">
+
+    <div style="background-color: crimson" class="main-title row">
+      <div class="col">
+        <img src="{{ url_for('static', filename='resources/medi.png') }}" class="card-img logo">
+      </div>
+      <div class="col main-title-text">
+        <h5 class="card-title">Medizin</h5>
+        <h6 class="card-subtitle">Doctor Patient Assistant</h6>
+      </div>
+      <div class="col" id='chat-toggle'><i class="material-icons chat-box-toggle">keyboard_arrow_down</i></div>
+    </div>
+
+    <div class="row chat-row" id="message-box-row">
+      <div class="col center-message-col" id="message-box"></div>
+    </div>
+
+    <div class="input-div row">
+      <div class="col input-message-col">
+        <input class="input-message" name="message" type="text" id="message" placeholder="Type a message..." >
+      </div>
+      <div class="col send-button-col">
+        <button style="background-color: blue" class="input-send" onclick="send()">
+          <svg style="width:24px;height:24px">
+            <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+          </svg>
+        </button>
+      </div>
+        
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.0/uuid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+  <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+<style>
+  body{
+    background-color: crimson;
+  }
+  .background-card{
+    background: #ffffff;
+    width: 45%;
+    height: 100vh;
+    position: absolute;
+    box-shadow:0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    right: 0;
+    top: 0;
+  }
+  .intro-pic{
+    width: 500px;
+    height: 450px;
+    margin-top: 10%;
+  }
+  .intro{
+    width: 45%;
+    height: 50%;
+    margin: 40px 25px;
+    text-align: center;
+  }
+  .logo-container{
+    margin: 10px 65px;
+    width: 130px;
+    height: 50px;
+    color: #ffffff;
+    position: relative;
+  }
+  h4{
+    font-size: 40px;
+    font-family: "lato";
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+  .title-container{
+    color: #ffffff;
+    padding-top: 20%;
+  }
+  
+  h3{
+    font-size: 60px;
+    font-family: "lato";
+  }
+  .shadow{
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.2);
+  }
+  .icon-div{
+    font-size: 40px;
+    border-radius: 50%;
+    border: 2px solid #0077b5;
+    background-color: #ffffff;
+    color: #0077b5;
+  }
+  .input-msg{
+    border: 2px solid blue;
+  }
+</style>
+</html>
